@@ -13,5 +13,9 @@ describe MergeSort do
     it "sorts array of two values correctly" do
       expect(MergeSort.sort([5, 1])).to eq([1, 5])
     end
+
+    it "sorts array of five values correctly" do
+      expect(MergeSort.sort([3, 7, 1, 9])).to eq([1, 3, 7, 9])
+    end
   end
 end
