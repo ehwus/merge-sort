@@ -9,5 +9,9 @@ describe MergeSort do
     it "returns value if given array with single value" do
       expect(MergeSort.sort([1])).to eq([1])
     end
+
+    it "sorts array of two values correctly" do
+      expect(MergeSort.sort([5, 1])).to eq([1, 5])
+    end
   end
 end
