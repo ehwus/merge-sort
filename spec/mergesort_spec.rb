@@ -15,7 +15,6 @@ describe MergeSort do
     end
 
     it "sorts array of five values correctly" do
-      skip
       expect(MergeSort.sort([3, 7, 1, 9])).to eq([1, 3, 7, 9])
     end
   end
