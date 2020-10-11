@@ -32,5 +32,9 @@ describe MergeSort do
     it "returns two sorted arrays of 3 together in order" do
       expect(MergeSort.merge([1, 3, 5], [2, 4, 6])).to eq([1, 2, 3, 4, 5, 6])
     end
+
+    it "merges correctly when first array larger than secord" do
+      expect(MergeSort.merge([1, 4, 9], [2, 3])).to eq([1, 2, 3, 4, 9])
+    end
   end
 end
