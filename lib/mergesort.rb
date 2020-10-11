@@ -8,19 +8,11 @@ class MergeSort
     end
   end
 
-  def self.merge(a, b)
+  def self.merge(left, right)
     return_array = []
-    a.each_with_index do |value, index|
-      if b[index].nil?
-        return_array.push(value)
-      elsif value > b[index]
-        return_array.push(b[index])
-        return_array.push(value)
-      else
-        return_array.push(value)
-        return_array.push(b[index])
-      end
+    until left.empty? || right.empty?
+      return_array << (left.first <= right.first ? left.shift : right.shift)
     end
-    return_array
+    return_array + left + right
   end
 end

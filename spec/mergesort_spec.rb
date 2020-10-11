@@ -19,8 +19,8 @@ describe MergeSort do
     end
 
     it "sorts array of 10 values correctly" do
-      test_list = [5, 69, 4346, 6, 69, 420, 1, 65, 5, 10]
-      expect(MergeSort.sort(test_list)).to eq([1, 5, 5, 6, 10, 65, 69, 69, 420, 4346])
+      test_list = [4, 66, 4346, 6, 69, 420, 1, 65, 5, 10]
+      expect(MergeSort.sort(test_list)).to eq([1, 4, 5, 6, 10, 65, 66, 69, 420, 4346])
     end
   end
 
